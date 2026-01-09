@@ -14,17 +14,17 @@ from usqlh.core import (
 )
 
 HELP_TEXT = """
-usql-helper: Enhanced CLI for managing usql database connections
+usqlh: Enhanced CLI for managing usql database connections
 
 Usage:
-  usql-helper help                Show help message
-  usql-helper add [alias]         Add or update a database connection (interactive)
-  usql-helper edit [alias]        Edit an existing connection (Tab to complete alias)
-  usql-helper rename <old> <new>  Rename an alias
-  usql-helper list [pattern]      List connections (with optional search)
-  usql-helper remove [alias]      Remove a connection (Tab to complete alias)
-  usql-helper connect [alias]     Connect to database (Tab to complete alias)
-  usql-helper <alias> [args]      Run usql with the alias directly
+  usqlh help                Show help message
+  usqlh add [alias]         Add or update a database connection (interactive)
+  usqlh edit [alias]        Edit an existing connection (Tab to complete alias)
+  usqlh rename <old> <new>  Rename an alias
+  usqlh list [pattern]      List connections (with optional search)
+  usqlh remove [alias]      Remove a connection (Tab to complete alias)
+  usqlh connect [alias]     Connect to database (Tab to complete alias)
+  usqlh <alias> [args]      Run usql with the alias directly
 """
 
 

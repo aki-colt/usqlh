@@ -31,30 +31,30 @@ pip install -e .
 
 ```bash
 # Add a new connection
-usql-helper add mydb
+usqlh add mydb
 # Follow the interactive prompts to configure
 
-# Connect to the database
-usql-helper connect  # Tab to select from saved connections
+# Connect to database
+usqlh connect  # Tab to select from saved connections
 # Or directly:
-usql-helper mydb
+usqlh mydb
 
 # List all saved connections
-usql-helper list
+usqlh list
 ```
 
 ## Usage
 
 | Command | Description |
 |---------|-------------|
-| `usql-helper add [alias]` | Add/update a connection (interactive) |
-| `usql-helper edit [alias]` | Edit existing connection (Tab to complete) |
-| `usql-helper remove [alias]` | Remove a connection (Tab to complete) |
-| `usql-helper rename <old> <new>` | Rename an alias |
-| `usql-helper list [pattern]` | List connections (optional filter) |
-| `usql-helper connect [alias]` | Connect with Tab completion |
-| `usql-helper c [alias]` | Short alias for connect |
-| `usql-helper <alias> [args]` | Connect directly, pass extra args to usql |
+| `usqlh add [alias]` | Add/update a connection (interactive) |
+| `usqlh edit [alias]` | Edit existing connection (Tab to complete) |
+| `usqlh remove [alias]` | Remove a connection (Tab to complete) |
+| `usqlh rename <old> <new>` | Rename an alias |
+| `usqlh list [pattern]` | List connections (optional filter) |
+| `usqlh connect [alias]` | Connect with Tab completion |
+| `usqlh c [alias]` | Short alias for connect |
+| `usqlh <alias> [args]` | Connect directly, pass extra args to usql |
 
 ### Auto-completion
 

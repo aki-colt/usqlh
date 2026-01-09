@@ -4,7 +4,7 @@ usqlh: Enhanced Python version for managing usql database connections
 A modern CLI and TUI tool for managing database connections with usql.
 """
 
-__version__ = "0.1.0"
+__version__ = "0.2.0"
 __author__ = "usqlh team"
 
 from usqlh.config import Config
