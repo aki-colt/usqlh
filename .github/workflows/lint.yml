@@ -18,11 +18,13 @@ jobs:
       - name: Set up Python
         run: uv python install 3.11
 
-      - name: Install dependencies
-        run: uv pip install --system ruff
+      - name: Create venv and install ruff
+        run: |
+          uv venv
+          uv pip install ruff
 
       - name: Run ruff check
-        run: ruff check usqlh/
+        run: uv run ruff check usqlh/
 
       - name: Run ruff format check
-        run: ruff format --check usqlh/
+        run: uv run ruff format --check usqlh/
